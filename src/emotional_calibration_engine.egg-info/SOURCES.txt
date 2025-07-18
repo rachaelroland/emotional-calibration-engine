@@ -1,0 +1,14 @@
+README.md
+setup.py
+src/emotional_calibration_engine/__init__.py
+src/emotional_calibration_engine/core.py
+src/emotional_calibration_engine/protocols.py
+src/emotional_calibration_engine.egg-info/PKG-INFO
+src/emotional_calibration_engine.egg-info/SOURCES.txt
+src/emotional_calibration_engine.egg-info/dependency_links.txt
+src/emotional_calibration_engine.egg-info/entry_points.txt
+src/emotional_calibration_engine.egg-info/requires.txt
+src/emotional_calibration_engine.egg-info/top_level.txt
+src/emotional_calibration_engine/configs/default_config.yaml
+tests/test_core.py
+tests/test_protocols.py

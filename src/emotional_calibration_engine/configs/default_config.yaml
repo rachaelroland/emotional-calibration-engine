@@ -1,0 +1,94 @@
+# Default configuration for Emotional Calibration Engine
+
+engine:
+  # Calibration sensitivity (0-1)
+  sensitivity: 0.7
+  
+  # Minimum time between calibrations (seconds)
+  cooldown_period: 300
+  
+  # Enable automatic protocol selection
+  auto_protocol_selection: true
+  
+  # Maximum protocol duration (seconds)
+  max_protocol_duration: 1800
+
+emotion_model:
+  # Core emotions configuration
+  core_emotions:
+    - joy
+    - sadness
+    - anger
+    - fear
+    - disgust
+    - surprise
+  
+  # Dimensional model parameters
+  dimensions:
+    valence:
+      min: -1.0
+      max: 1.0
+    arousal:
+      min: 0.0
+      max: 1.0
+    dominance:
+      min: 0.0
+      max: 1.0
+
+calibration:
+  # Orbital stability threshold
+  stability_threshold: 0.3
+  
+  # Center distance threshold for intervention
+  displacement_threshold: 0.7
+  
+  # History window for pattern detection
+  history_window: 20
+  
+  # Minimum emotional intensity for tracking
+  min_intensity: 0.1
+
+protocols:
+  # Protocol activation thresholds
+  activation_thresholds:
+    being_seen:
+      sadness: 0.7
+      dominance_max: 0.3
+      keywords_required: 1
+    
+    shattered_mirror:
+      fragmentation_score: 0.8
+      emotion_variance: 0.6
+    
+    re_entry:
+      displacement: 0.9
+      time_displaced: 600
+
+safety:
+  # Prevent premature closure
+  require_explicit_completion: true
+  
+  # Minimum wait time for user response (seconds)
+  min_response_time: 5
+  
+  # Emergency exit phrases
+  exit_phrases:
+    - "stop"
+    - "exit"
+    - "end session"
+    - "I need to go"
+  
+  # Escalation to human support threshold
+  escalation_threshold:
+    distress_level: 0.9
+    duration: 900
+
+logging:
+  # Logging configuration
+  level: INFO
+  
+  # Privacy-preserving logging
+  anonymize_content: true
+  
+  # Log retention (days)
+  retention_days: 30
